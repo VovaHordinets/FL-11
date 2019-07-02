@@ -1,0 +1,273 @@
+body {
+  font-family: roboto;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+
+/* Your styles go here */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li{
+                 
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+html{
+  background-color: #0b192f;
+  font-size: 15px;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.header{
+  background-color:#162b4d;
+  margin-bottom: 20px;
+}
+.container{
+  max-width: 1350px;
+  width: 90%;
+  margin: 0 auto;
+  color: #fff;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo{
+  font-size: 2.1em;
+  font-weight: 200;
+  margin-left: 0.4em;
+}
+.logo span{
+ color:  #d12767;
+}
+.main-menu{
+  list-style-type: none;
+}
+.main-menu li{
+  display: inline-block;
+  padding: 44px 22px;
+}
+.main-menu a{
+  font-size: 1.1em;
+  font-weight: 300;
+  height: 100%;
+}
+.main-menu li:hover{
+  background-color:#b8b8b8;
+  cursor: pointer;
+}
+.post-1 .desc-image{
+  background: url(../img/post1.jpg) no-repeat center /cover;
+}
+.post-2 .desc-image{
+  background: url(../img/post2.jpg) no-repeat center /cover;
+}
+.post-3 .desc-image{
+  background: url(../img/post3.jpg) no-repeat center /cover;
+}
+.post-4 .desc-image{
+  background: url(../img/post4.jpg) no-repeat center /cover;
+}
+.tables{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.posts{
+  display: flex;
+}
+.posts:nth-child(2n){
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.posts:nth-child(2n) .description{
+  flex-direction: row-reverse;
+  padding: 10px 60px 60px 0px;
+}
+.posts .desc-image{
+  width: 50%;
+}
+.posts .description{
+  width: 50%;
+  flex-direction: row;
+}
+.description{
+  display: flex;
+  padding: 10px 0px 60px 40px;
+  color: #fff;
+  font-weight: 100;
+}
+.desc-text{
+  width: 65%
+}
+.desc-text h2{
+  line-height: 1;
+  margin-top: 45px;
+  font-size: 3.4em;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+.desc-text p {
+    margin: 25px 0 16px 0;
+    font-size: 17.85px;
+    line-height: 1.6;
+    font-weight: 300;
+    opacity: .6;
+}
+.desc-data{
+    width: 30%;
+    vertical-align: top;
+    text-align: center;
+    color: #fff;
+    opacity: 0.3;
+    margin: 10px 9px 0 19px;
+    font-size: 1.4em;
+    font-weight: 100;
+}
+.desc-data span {
+  display: inline-block;
+  font-size: 2.1em;
+  margin-bottom: 5px;
+}
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+.news{
+  width: 21%;
+}
+.news section{
+  display: flex;
+  flex-direction: column;
+}
+.news img{
+  width: 100%;
+}
+.news .news-text{
+    background-color: #fff;
+    padding: 38px;
+    color: black;
+}
+.news-text h3 {
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 1.1;
+  margin: 0;
+}
+.news-text p{
+    font-size: 1.1em;
+    margin: 12px 0 0 0;
+    line-height: 1.6;
+    font-weight: 100;
+}
+.desc-image:hover {
+  filter: opacity(0.5);
+  cursor: pointer;
+}
+.desc-text h2:hover {
+  cursor: pointer;
+  color: #b8b8b8;
+}
+footer {
+  background-color: #162b4d;
+  margin: 24px 0 5px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 32px;
+  color: #b8b8b8;
+  font-weight: 100;
+  font-size: 1.2em;
+}
+.header-hamburger{
+  display: none;
+}
+@media screen and (max-width: 1400px) {
+  .container {
+      width: 100%;
+  }
+}
+@media (max-width: 768px) {
+.header ul{
+  display: none;
+}
+.header nav {
+  flex-direction: column;
+  padding: 40px 0;
+}
+.header-hamburger{
+  display: block;
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 50px;
+}
+.tables {
+  width: 59%;
+}
+
+.news {
+  width: 38%;
+}
+.tables section,
+.tables section:nth-child(even) {
+  flex-direction: column;
+}
+.posts .desc-image{
+  width: 100%;
+  height: 400px;
+}
+.posts .description,
+.posts:nth-child(2n) .description,
+.description {
+  width: 100%;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+}
+.desc-text {
+  width: 100%;
+}
+.desc-data {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+}
+footer{
+  flex-direction: column;
+  text-align: center;
+}
+
+
+}
+@media screen and (max-width: 480px){
+  .tables {
+    width: 100%;
+  }
+  .wrapper{
+    flex-direction: column;
+  }
+  .news{
+    width: 100%;
+  }
+}
