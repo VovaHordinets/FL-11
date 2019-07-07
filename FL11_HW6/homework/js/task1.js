@@ -1,0 +1,11 @@
+let a1,a2,b1,b2,c1,c2;
+let result;
+let two = 2;
+a1 = +prompt('Write a1', '');
+a2 = +prompt('Write a2', '');
+b1 = +prompt('Write b1', '');
+b2 = +prompt('Write b2', '');
+c1 = +prompt('Write c1', '');
+c2 = +prompt('Write c2', '');
+result = c1===(a1+b1)/two && c2===(a2+b2)/two;
+console.log(result);
