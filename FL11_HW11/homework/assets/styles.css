@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li{
+                 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+button{
+    background: inherit;
+    border: none;
+    line-height: 0;
+    outline: none;
+    padding: 0;
+}
+legend.heading[special]::after{
+    content: 'Maximum item per list are created';
+    display: block;
+    font-size: 60%;
+}
+button:hover{
+    cursor: pointer;
+}
+#new-task{
+    width: 80%;
+    font-size: 20px;
+    vertical-align: bottom;
+    padding: 15px 20px;
+    outline: none;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    border-color: black;
+}
+input[type="text"]{
+    width: 90%;
+    font-size: 15px;
+    vertical-align: bottom;
+    padding: 10px 15px;
+    outline: none;
+    margin-bottom: 2px;
+    border-radius: 3px;
+    border-color: black;
+}
+legend{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+#root{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+#add_btn i{
+    line-height: 0.8;
+    font-size: 61px;
+    vertical-align: bottom;
+    color: lightgray;
+}
+fieldset{
+    border: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+fieldset::after{
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: lightblue; 
+    width: 90%;
+    margin: 30px auto 0px;
+}
+.list-to-do{
+    margin-top: 40px;
+    list-style-type: none;
+}
+.to-do-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5px auto;
+}
+.to-do-item .wrap{
+    display: flex;
+}
+.to-do-item .item-text{
+margin: 0 10px;
+}
+.line-text{
+    margin: 10px 0;
+}
+
